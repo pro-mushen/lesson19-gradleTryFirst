@@ -32,7 +32,7 @@ public class FinderRealizationTest {
     void addFoundOffersNullTest() {
         when(spyProcessingFiles.connection()).thenReturn(null);
         spyProcessingFiles.addFoundOffers();
-        assertEquals(spyProcessingFiles.getFinishList().size(), 1);
+        assertEquals(spyProcessingFiles.getFinishList().size(), 0);
     }
 
 
